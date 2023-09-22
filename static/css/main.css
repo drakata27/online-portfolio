@@ -1,10 +1,61 @@
+/* Global Styles */
 body {
     background: #0c192c;
-    overflow: hidden;
     size: 10%;
     font-family: 'Roboto', sans-serif;
+    padding-top: 200px; /* This should be equal to the height of your header */
+}
+h2 {
+    color: #fff;
+}
+h3 {
+    color: #ffffff80;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
+ul {
+    list-style-type: square;
+}
+li {
+    color: #d0bebe;
+}
+li { 
+    transition: all .2s ease-in-out; 
+}
+    
+li:hover { 
+    cursor: pointer;
+   transform: scale(1.1); 
+}
+hr {
+    color: #fff;
+    background-color: #2f3235;
+    border-radius: 10px;
+    border: 2px solid #2f3235;
+    margin: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/* End global Styles */
+
+/* About */
+.about-div {
+    color: #d0bebe;
+}
+/* End about */
+
+/* Skills */
+.skills-div h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* End skills */
+
+/* Footer */
+#footer-note{
+    color: #ffffff80;
+    text-align: center;
+}
+/* End footer */
