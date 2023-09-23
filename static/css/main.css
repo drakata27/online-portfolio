@@ -15,8 +15,8 @@ h4 {
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
-ul {
-    list-style-type: square;
+p {
+    color: #d0bebe;
 }
 li {
     color: #d0bebe;
@@ -41,9 +41,6 @@ hr {
 /* End global Styles */
 
 /* About */
-.about-div {
-    color: #d0bebe;
-}
 /* End about */
 
 /* Skills */
@@ -52,6 +49,64 @@ hr {
     margin-bottom: 50px;
 }
 /* End skills */
+
+/* Projects */
+#projects {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#projects .project {
+    width: calc(33.33% - 20px);
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #2f3235;
+    border-radius: 25px;
+    cursor: pointer;
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#projects .project:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#projects .project img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#projects .project .des {
+    text-align: start;
+    padding: 10px 0;
+    margin-top: 20px;
+    height: 300px;
+}
+
+#projects .des span {
+    font-size: 12px;
+}
+.title p {
+    margin-bottom: 40px;
+}
+.project {
+    justify-content: start;
+}
+.project a {
+    margin-bottom: 20px;
+    color: white;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* End projects */
 
 /* Footer */
 #footer-note{
