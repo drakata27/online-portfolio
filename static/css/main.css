@@ -3,7 +3,6 @@ body {
     background: #0c192c;
     size: 10%;
     font-family: 'Roboto', sans-serif;
-    padding-top: 100px;
     overflow-x: hidden;
 }
 h2 {
@@ -40,9 +39,57 @@ hr {
 /* End global Styles */
 
 /* Navbar */
-.navbar {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 100px;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff80;
+    transition: 0.3s ease;
+  }
+  ul {
+    margin-left: 1300px;
+  }
+  #navbar .btn{
+    color: white;
+    border: black;
+  }
+  #navbar .btn:hover{
+    background-color: #1e2329;
+  }
+  #mobile {
+    display: none;
+    align-items: center;
+  }
+  #close {
+    display: none;
+  }
+  #mobile {
+    display: none;
+    align-items: center;
+  }
+
 /* End navbar */
 
 /* Home */
@@ -195,6 +242,16 @@ hr {
 }
 /* End contact */
 
+/* Mobile */
+#mobile {
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+/* End mobile */
+
 /* Footer */
 #footer{
     height: 150px;
@@ -205,3 +262,62 @@ hr {
     text-align: center;
 }
 /* End footer */
+
+ /* Media Query (Tablets)*/
+ @media (max-width: 958px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #1e2329;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s; 
+    }
+    #navbar.active {
+        right: 0;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    ul {
+        margin-left: -800px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #ffffff80;
+        font-size: 24px;
+    }
+    .home-div1 .responsive-img {
+        width: 90% !important;
+    }
+    #about .responsive-img {
+        width: 80% !important;
+        height: 70%;
+        margin-top: 60px;
+    }
+    #about p{
+        font-size: 20px;
+    }
+}
