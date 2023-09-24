@@ -3,7 +3,8 @@ body {
     background: #0c192c;
     size: 10%;
     font-family: 'Roboto', sans-serif;
-    padding-top: 200px; /* This should be equal to the height of your header */
+    padding-top: 100px;
+    overflow-x: hidden;
 }
 h2 {
     color: #fff;
@@ -17,13 +18,14 @@ p {
 }
 li {
     color: #d0bebe;
+    list-style: none;
 }
 li { 
     transition: all .2s ease-in-out; 
 }
     
 li:hover { 
-    cursor: pointer;
+   cursor: pointer;
    transform: scale(1.1); 
 }
 hr {
@@ -37,13 +39,69 @@ hr {
 }
 /* End global Styles */
 
+/* Navbar */
+.navbar {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+/* End navbar */
+
+/* Home */
+#home {
+    background-color: #f9f9f9;
+    height: 650px;
+    margin-bottom: 50px;
+}
+#home p {
+    color: black;
+    font-size: 28px;
+}
+#home img{
+    width: 10px;
+    border-radius: 100px;
+}
+#home h2{
+    color: gray;
+    font-size: 68px;
+}
+.home-div1{
+    margin-top: 160px;
+}
+.home-div2{
+    margin-top: 180px;
+}
+.github-icon{
+    color: black;
+    margin-right: 20px;
+}
+/* End home */
+
 /* About */
+#about img{
+    /* border-radius: 360px; */
+    margin-right: 40px;
+}
 /* End about */
 
 /* Skills */
 .skills-div h2 {
     text-align: center;
     margin-bottom: 50px;
+    margin-left: 40px;
+}
+.skills-div h3 {
+    text-align: center;
+    margin-left: 40px;
+}
+.skills-div p{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.technology {
+    color: #f9f9f9;
+    margin-right: 10px;
+}
+.col-md-4 {
+    text-align: center;
 }
 /* End skills */
 
@@ -63,7 +121,6 @@ hr {
     border: 1px solid #2f3235;
     border-radius: 25px;
     cursor: pointer;
-    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); */
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
     margin: 15px 0;
     transition: 0.2s ease;
@@ -72,6 +129,7 @@ hr {
 
 #projects .project:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transform: scale(1.02);
 }
 
 #projects .project img {
@@ -94,19 +152,55 @@ hr {
 }
 .project {
     justify-content: start;
+    transition: all .2s ease-in-out; 
 }
 .project a {
     margin-bottom: 20px;
     color: white;
 }
+
 .container h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 /* End projects */
 
+/* Contact */
+.contact-div {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-box {
+    padding: 20px;
+    border: 1px solid #2f3235;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .2s ease-in-out; 
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.contact-box a{
+    text-decoration: none;
+}
+.contact-box p {
+    margin-top: 20px;
+}
+.contact-box svg {
+    margin-right: 15px;
+}
+.contact-box:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transform: scale(1.02);
+    color: purple;
+}
+/* End contact */
+
 /* Footer */
+#footer{
+    height: 150px;
+}
 #footer-note{
+    margin-top: 50px;
     color: #ffffff80;
     text-align: center;
 }
