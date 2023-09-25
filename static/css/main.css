@@ -74,8 +74,11 @@ hr {
 
 /* About */
 #about img{
-    /* border-radius: 360px; */
     margin-right: 40px;
+}
+#about h2 {
+    text-align: center;
+    margin-bottom: 90px;
 }
 /* End about */
 
@@ -204,23 +207,20 @@ hr {
 /* End footer */
 
  /* Media Query (Tablets)*/
- @media (max-width: 991px) {
+ @media (max-width: 1200px) {
     .sidebar {
         background-color: #15181c;
         backdrop-filter: blur(10px)
     }
     /* Home */
     #home {
-        height: 85%;
+        height: 60%;
         margin-bottom: 20px;
     }
     #home img {
         width: 60% !important;
         border-radius: 30px;
         margin-bottom: 50px;
-    }
-    #home .home-div2{
-       margin-top: 0;
     }
     #home h2 {
         font-size: 40px;
@@ -236,6 +236,23 @@ hr {
         margin-left: 10px;
     }
     /* End Home */
+
+}
+
+/* Media Query (Smaller screens) */
+@media (max-width: 959px) {
+    /* Home */
+    #home {
+        height: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Home */
+    #home {
+        height: 100%;
+        /* height: 60%; */
+    }
 }
 
 /* Media Query (Phones)*/
@@ -246,6 +263,9 @@ hr {
     /* Home */
     #home {
         height: 120%;
+    }
+    #home .home-div2{
+       margin-top: 0;
     }
     /* End Home */
 }
