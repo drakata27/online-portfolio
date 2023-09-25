@@ -209,4 +209,43 @@ hr {
         background-color: #15181c;
         backdrop-filter: blur(10px)
     }
+    /* Home */
+    #home {
+        height: 85%;
+        margin-bottom: 20px;
+    }
+    #home img {
+        width: 60% !important;
+        border-radius: 30px;
+        margin-bottom: 50px;
+    }
+    #home .home-div2{
+       margin-top: 0;
+    }
+    #home h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    #home p{
+        text-align: center;
+    }
+    .github-icon {
+        margin-left: 100px;
+    }
+    .linkedin-icon {
+        margin-left: 10px;
+    }
+    /* End Home */
+}
+
+/* Media Query (Phones)*/
+@media (max-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* Home */
+    #home {
+        height: 120%;
+    }
+    /* End Home */
 }
